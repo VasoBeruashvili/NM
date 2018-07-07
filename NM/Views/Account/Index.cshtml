@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+    <script src="~/Scripts/jquery-1.9.1.min.js"></script>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/LoginStyles.css" rel="stylesheet" />
+    <title>NM</title>
+</head>
+<body>
+    <nav class="navbar navbar-fixed-top topFixedNavbar topFixedNavbarShadow" style="background-color: #f8f8f8;">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" style="margin-top: -10px;"><img src="~/Images/ikaaa.png" width="45" height="45" style="margin-top: -2px;" /></a>
+                </div>
+                <div>
+                    <ul class="nav navbar-nav"></ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="outer">
+        <div class="middle">
+            <div class="inner">
+                <div id="reg_form">
+                    <form action="/Account/Login" method="post">
+                        <table id="regtable">
+                            <tr>
+                                <td style="text-align: right;">
+                                    <label for="userName" style="color: #222; font-weight: normal;">შესვლის სახელი:</label>
+                                </td>
+                                <td>
+                                    <input name="UserName" id="userName" type="text" style="width: 145px; margin-left: 5px;" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: right;">
+                                    <label for="password" style="color: #222; font-weight: normal;">პაროლი:</label>
+                                </td>
+                                <td>
+                                    <input name="Password" id="password" type="password" style="width: 145px; margin-left: 5px;" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td style="text-align: right; padding-top:5px;">
+                                    <input type="submit" name="submit" value="შესვლა" formaction="/Account/Login" id="loginbtn" />
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="2" style="text-align: center;">
+                                    <span style="color: red; font-size: small">@ViewBag.ValidateUserMessage &nbsp;</span>
+
+                                </td>
+                            </tr>
+
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid pageFooter" style="background-color: #bcbbbc; color: #444;">
+        <div class="container">
+            <span style="float: right;">&copy;@DateTime.Now.Year NM</span>
+        </div>
+    </div>
+</body>
+</html>

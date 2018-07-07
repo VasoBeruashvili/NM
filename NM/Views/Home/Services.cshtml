@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+<html ng-app="ProductsApp" lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+    <title>საკანცელარიო</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/font-awesome.min.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-1.9.1.min.js"></script>
+    <script src="~/Scripts/angular.min.js"></script>
+    <script src="~/Scripts/ui-bootstrap-tpls-0.13.1.min.js"></script>
+    <script src="~/assets/js/language_changer.js"></script>
+    <link href="~/assets/css/font-awesome.min.css" rel="stylesheet" media="screen" />
+    <link href="~/assets/css/simple-line-icons.css" rel="stylesheet" media="screen" />
+    <link href="~/assets/css/animate.css" rel="stylesheet" />
+    <link href="~/assets/css/style.css" rel="stylesheet" media="screen" />
+    <script src="~/assets/js/modernizr.custom.js"></script>
+    @*<link rel="stylesheet" type="text/css" href="~/assets/engine/style.css" />*@
+    <script type="text/javascript" src="~/assets/engine/jquery.js"></script>
+    @*<link href="~/styles.css" rel="stylesheet" />*@
+    <link href="~/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen" />
+
+    @*<script src="~/Scripts/useful-functions.js"></script>*@
+    <style type="text/css">
+        #product:hover{
+            -webkit-box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
+            box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
+        }
+
+        .pageFooter{
+            background-color: #444;
+            color: #fff;
+            left: 0;
+            right: 0;
+            position: fixed; /* relative */
+            bottom: 0;
+            padding: 10px;
+            font-family: Consolas;
+            padding-top: 6px;
+            -webkit-box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.75);
+            -moz-box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.75);
+            box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.75);
+        }
+    </style>
+    <script src="~/Scripts/app.js"></script>
+</head>
+<body ng-controller="ProductsController" style="background-color: #f3f3f3;">
+    <nav class="navbar navbar-default navbar-fixed-top" style="background-color: #f8f8f8;">
+
+        <div class="container">
+            <a class="navbar-brand" href="/Home/Index" style="color: #444;"><img src="~/Images/ikaaa.png" width="45" height="45" style="margin-top: -12px;" /></a>
+
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#home">საკანცელარიო</a></li>
+                <li><a href="/Home/AllServices">მომსახურება</a></li>
+                <li><a href="#contact">კონტაქტი</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div id="home"></div>
+    <div id="preloader">
+        <div id="status"></div>
+    </div>
+    @*<nav class="navbar navbar-default navbar-static-top" style="background-color: #444;">
+      <div class="container">
+          <a class="navbar-brand" href="/Home/Index" style="color: #f8f8f8;"><img class="navbar-brand" />NM</a>
+      </div>
+    </nav>*@
+
+    <div class="container-fluid" style="padding-top: 80px; padding-bottom: 20px;">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <div class="form-inline" style="width: 100%; margin-bottom: 40px;">
+                <input class="form-control form-group" placeholder="ძებნა..." style="width: 93%;" ng-model="searchFragment" ng-change="GetProducts()" autofocus />
+                <a class="btn btn-default form-group" style="float: right;" ng-click="GetProducts()"><i class="fa fa-search"></i></a>
+            </div>
+
+            <div id="product" ng-repeat="product in products" style="border: 1px solid #aaaaaa; border-radius: 5px; width: 100%; margin-bottom: 20px; padding: 10px; background-color: #fff;">
+                <p>
+                    <img style="border: 1px solid #b7b5b5;" width="100" height="100" ng-src="{{product.Image}}" />
+                </p>
+                <p>
+                    <b>აღწერა:</b> {{product.Description}}
+                </p>
+                <p style="text-align: right; margin-top: 15px;">
+                    <b>ფასი:</b> {{product.Amount}} ლარი
+                </p>
+            </div>
+
+            <pagination boundary-links="true" total-items="totalItems" items-per-page="itemsPerPage" ng-model="currentPage" ng-change="pageChanged()" class="pagination" previous-text="&lsaquo;" next-text="&rsaquo;" first-text="&laquo;" last-text="&raquo;"></pagination>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+
+    <footer id="footer">
+        <div class="container">
+            <p><a name="contact" id="contact"></a></p><br /><br />
+            (+995)&nbsp557 70-12-02<br />
+            (+995)&nbsp574 17-68-05<br /><br />
+            <div class="row">
+                <div class="col-sm-12">
+                    <ul class="social-links">
+                        <li class="fb"><a href="index.html#" class="wow fadeInUp"><i class="fa fa-facebook"></i></a></li>
+                        <li class="tw"><a href="index.html#" class="wow fadeInUp" data-wow-delay=".1s"><i class="fa fa-twitter"></i></a></li>
+                        <li class="gp"><a href="index.html#" class="wow fadeInUp" data-wow-delay=".2s"><i class="fa fa-google-plus"></i></a></li>
+                    </ul>
+                    <center><img class="footer-banner" /></center><br />
+                    <p class="copyright">
+                        NM © 2015 - @DateTime.Now.Year
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="scroll-up">
+        <a href="#home"><i class="fa fa-angle-up"></i></a>
+    </div>
+    <script src="~/assets/js/jquery-1.11.1.min.js"></script>
+    <script src="~/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/assets/js/jquery.parallax-1.1.3.js"></script>
+    <script src="~/assets/js/imagesloaded.pkgd.js"></script>
+    <script src="~/assets/js/jquery.sticky.js"></script>
+    <script src="~/assets/js/smoothscroll.js"></script>
+    <script src="~/assets/js/wow.min.js"></script>
+    <script src="~/assets/js/jquery.easypiechart.js"></script>
+    <script src="~/assets/js/waypoints.min.js"></script>
+    <script src="~/assets/js/jquery.cbpQTRotator.js"></script>
+    <script src="~/assets/js/custom.js"></script>
+    <script src="~/assets/js/typed.js"></script>
+</body>
+</html>

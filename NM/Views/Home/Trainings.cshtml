@@ -1,0 +1,551 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>სწავლება</title>
+    <script src="~/assets/js/language_changer.js"></script>    
+    <link href="~/assets/css/font-awesome.min.css" rel="stylesheet" media="screen" />
+    <link href="~/assets/css/simple-line-icons.css" rel="stylesheet" media="screen" />
+    <link href="~/assets/css/animate.css" rel="stylesheet" />
+    <link href="~/assets/css/style.css" rel="stylesheet" media="screen" />
+    <script src="~/assets/js/modernizr.custom.js"></script>
+    @*<link rel="stylesheet" type="text/css" href="~/assets/engine/style.css" />*@
+    <script type="text/javascript" src="~/assets/engine/jquery.js"></script>
+    @*<link href="~/styles.css" rel="stylesheet" />*@
+    <link href="~/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen" />
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top" style="background-color: #f8f8f8;">
+        <div class="container">
+            <a class="navbar-brand" href="/Home/Index" style="color: #444;"><img src="~/Images/logoo.png" width="45"height="45" style="margin-top: -12px;" /></a>
+
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">უცხო ენები <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#inglisuri">ინგლისური</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#resuli">რუსული</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#germanuli">გერმანული</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#franguli">ფრანგული</a></li> 
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#chinuri">ჩინური</a></li>  
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#turquli">თურქული</a></li> 
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#espanuri">ესპანური</a></li>  
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#berznuli">ბერძნული</a></li>  
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#italiuri">იტალიური</a></li> 
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#iaponuri">იაპონური</a></li> 
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#arabuli">არაბული</a></li>                       
+                    </ul>
+                </li>
+                 <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">აბიტურიენტთა მომზადება <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#unarebi">უნარები</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#qartuli_ena">ქართული ენა</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#ucxo_ena">უცხო ენა</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#geografia">გეოგრაფია</a></li> 
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#fizika">ფიზიკა</a></li>  
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#qimia">ქიმია</a></li> 
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#istoria">ისტორია</a></li>  
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#literatura">ლიტერატურა</a></li>  
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#samoqalaqo_ganatleba">სამოქალაქო განათლება</a></li> 
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#xelovneba">ხელოვნება</a></li>                      
+                    </ul>
+                </li>
+                 <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">საატესტატოდ მომზადება <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#saatestato_geografia">გეოგრაფია</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#saatestato_fizika">ფიზიკა</a></li> 
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#saatestato_qimia">ქიმია</a></li>
+                        <li role="separator" class="divider"></li>  
+                        <li><a href="#saatestato_biologia">ბიოლოგია</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#saatestato_matematika">მათემატიკა</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#saatestato_ucxo_ena">უცხო ენა</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#saatestato_istoria">ისტორია</a></li> 
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#saatestato_qartuli_ena">ქართული ენა და ლიტერატურა</a></li>                   
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">მასწ-თა სერტიფიცირება<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#sertifikati_geografia">პირველი პუნქტი</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#sertifikati_fizika">მეორე პუნქტი</a></li> 
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#sertifikati_qimia">მესამე პუნქტი</a></li>
+                        <li role="separator" class="divider"></li>  
+                        <li><a href="#sertifikati_biologia">მეოთხე პუნქტი</a></li>
+                                          
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">სასწავლო პროგრამები<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#bugalteria">ბუღალტერია</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#Saofise_programebi">საოფისე პროგრამები</a></li> 
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#IT_injineria">IT ინჟინერია</a></li>
+                        <li role="separator" class="divider"></li>  
+                        <li><a href="#veb_programireba">ვებ პროგრამირება</a></li>
+                          <li role="separator" class="divider"></li>  
+                        <li><a href="#grafikuli_dizaini">გრაფიკული დიზაინი</a></li>
+                                          
+                    </ul>
+                </li>
+                <li><a href="#contact">კონტაქტი</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div id="home"></div>
+        <div id="preloader">
+            <div id="status"></div>
+        </div>
+        <header class="header">
+            @*<nav class="navbar navbar-custom" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#custom-collapse">
+                            <span class="sr-only"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="/Home/Index"><img class="navbar-brand" src="~/Images/logoo.png" /></a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="custom-collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#inglisuri">ინგლისური</a></li>
+                            <li><a href="#resuli">რუსული</a></li>
+                            <li><a href="#germanuli">გერმანული</a></li>
+                            <li><a href="#franguli">ფრანგული</a></li>
+                            <li><a href="#contact">კონტაქტი</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>*@            
+        </header>
+        <style>
+            img.floatLeft { 
+              float: left; 
+              margin: 7px;
+              margin-left:0px; 
+                          }
+        </style>
+        <style>
+           .class1 {
+            display: block;
+            word-break: keep-all;
+            border:1px solid #079e0c;
+            padding:5px;
+            }
+        </style>
+     
+        <section id="main"><br /><br /><br /><br />
+            <h4><b><p>სასწავლო კურსების ორგანიზებისთვის ყველა პირობაა შექმნილი</p></b></h4>
+           <div class="class1"> <ul style="list-style:none"><li>•	ტრენინგისათვის განკუთვნილი თანამედროვე დარბაზები</li><li>•	საჭირო აღჭურვილობა</li><li>•	მაღალკვალიფიციური ტრენერები</li><li>•	კომფორტული გარემო</li><li>•	მაღალი ხარისხის მომსახურება და კეთილგანწყობა</li><li>•	უფასო Wi-Fi</li><li>•	კლიენტის სურვილის შემთხვევაში შესაძლებელია შეკვეთილი კურსების კორპორატიული კლიენტის ცენტრში ორგანიზება</li></ul></div>
+            <p><a name="inglisuri" id="inglisuri"></a></p><br /><br />
+            <h2>1.ინგლისური ენის შემსწავლელი კურსი:</h2>
+            <h3>ისწავლეთ ინგლისური ენა სწრაფად და ადვილად!</h3>
+           <p class="col2"><img src="~/Images/america.jpg" class="floatLeft" height="200" width="200" />&nbsp;&nbsp;გთავაზობთ ინგლისური ენის სპეციალიზირებულ კურსს. შეისწავლეთ ინგლისური ენა ოთხჯერ უფრო სწრაფად და მარტივად!  კურსი მოიცავს სპეციალიზირებულ ლექსიკასა და ტერმინოლოგიებს, მსოფლიოს ყველაზე ცნობილ და საუკეთესო პროგრამებს, აპრობირებულ და დამტკიცებულ მეთოდებს!  კურსი გულისხმობს ასევე აუდიო და ვიდეო მასალის გამოყენებას, პრაქტიკულ კურსებსა და სიმულაციურ თამაშებს. მეცადინეობა მიმდინარეობს როგორც ჯგუფურად ასევე ინდივიდუალურად! </p><br /><br /><br />
+            <br />
+             <div style="float: right;"  class="col2"> 
+            <p><u><b><h4 style="color:#1b01fa">სწავლის საფასური:</h4></b></u></p>
+           <ul><li>ინდივიდუალური - 120 ლარი</li><li>2 კაციანი ჯგუფი- 70 ლარი</li><li>4 კაციანი ჯგუფი- 50 ლარი</li></ul></div><br /><br />
+            <p><a name="resuli" id="resuli"></a></p><br /><br />
+            <h2> 2.რუსული ენის შემსწავლელი კურსი:</a></h2>
+            <h3>ისწავლეთ რუსული ენა სწრაფად და ადვილად!</h3>
+
+            <p class="col2">
+                <img src="~/Images/russia.jpg" class="floatLeft" height="200" width="200" />&nbsp;&nbsp;
+                გთავაზობთ გაიაროთ რუსული ენის შემსწავლელი კურსი მარტივად და სწრაფად! თქვენ მოგემსახურებათ ძლიერი სერტიფიცირებული პედაგოგები! სპეციალურად თქვენთვის მომზადებული მასალებითა და ტესტებით! რუსული ენის შესწავლა ხდება გრამატიკისა და პრაქტიკული დავალებების გათვალისწინებით! ასევე სიტუაციური დიალოგებითა და აუდიო ვიდეო მასალების დახმარებით! კურსის ხანგრძლივობა 2-6 თვეს გულისხმობს. დასრულების შემდგომ გაიცემა შესაბამისი დონის სერტიფიკატი. </p><br /><br /><br />
+           <br />
+            <div style="float: right;"  class="col2"> 
+            <p><u><b><h4 style="color:#1b01fa">სწავლის საფასური:</h4></b></u></p>
+            <ul><li>ინდივიდუალური - 120 ლარი</li><li>2 კაციანი ჯგუფი- 70 ლარი</li><li>4 კაციანი ჯგუფი- 50 ლარი</li></ul></div><br /><br /><br />
+           <p><a name="germanuli" id="germanuli"></a></p><br /><br />
+             <h2>3.გერმანული ენის შემსწავლელი კურსი:</h2>
+            <h3>ისწავლეთ გერმანული ენა სწრაფად და ადვილად!</h3>
+            <div class="col2">
+                <img src="~/Images/german1.jpg" class="floatLeft" height="200" width="200" style="margin-right: 25px;" />&nbsp;&nbsp;
+              ენის შესწავლა მიმდინარეობს თანამედროვე, ევროპული სწავლების შესაბამისად, როგორც ინდივიდუალურად, ისე ჯგუფურად. ცენტრში შექმნილია ყველანაირი პირობა,რომ მსმენელმა მშვიდ გარემოში ეფექტურად შეძლოს ცოდნის ათვისება.
+              გასაუბრების და ტესტის საფუძველზე მოხდება სტუდენტის შესაბამის კურსზე ჩარიცხვა. კურსი მოიცავს შემდეგ მიმართულებებს:
+             <ul><li>მარტივი კომუნიკაცია.</li><li>გრამატიკის სრული კურსი.</li></ul>
+</div> <br />
+            <h5><b> ინსტიტუტის სტანდარტით ნებისმიერი დონის:<br />
+( A1 - A2  Start Deutsch; B1 - B2 Zertifikat Deutsch; C1 - C2  Wirtschaft Deutsch)<br /> სერთიფიკატისთვის მომზადება.
+</b></h5>
+            <ul><li>აბიტურიენტების საგამოცდო პროგრამა.</li><li>საბავშვო პროგრამა (სწავლება თამაშით, გასართობი გაკვეთილები)</li><li>სამედიცინო გერმანული.</li><li>ბიზნეს გერმანული.</li><li>Au-Pairპროგრამა</li></ul>
+           <br />
+            <div style="float: right;"  class="col2">
+            <p><u><b><h4 style="color:#1b01fa">სწავლის საფასური:</h4></b></u></p>
+             <ul><li>ინდივიდუალური - 120 ლარი</li><li>2 კაციანი ჯგუფი- 70 ლარი</li><li>4 კაციანი ჯგუფი- 50 ლარი</li></ul></div><br /><br />
+            <p><a name="franguli" id="franguli"></a></p><br /><br />
+            <h2> 4.ფრანგული ენის შემსწავლელი კურსი:</h2>
+            <h3>ისწავლეთ ფრანგული ენა სწრაფად და ადვილად!</h3>
+            <p class="col2"><img src="~/Images/france.jpg" class="floatLeft" height="200" width="200" /> &nbsp;&nbsp; გთავაზობთ ფრანგული ენის სპეციალიზირებულ კურსს. შეისწავლეთ ფრანგული ენა ოთხჯერ უფრო სწრაფად და მარტივად!  კურსი მოიცავს სპეციალიზირებულ ლექსიკასა და ტერმინოლოგიებს, მსოფლიოს ყველაზე ცნობილ და საუკეთესო პროგრამებს, აპრობირებულ და დამტკიცებულ მეთოდებს!  კურსი გულისხმობს ასევე აუდიო და ვიდეო მასალის გამოყენებას, პრაქტიკულ კურსებსა და სიმულაციურ თამაშებს. მეცადინეობა მიმდინარეობს როგორც ჯგუფურად ასევე ინდივიდუალურად! </p><br /><br /><br /><br /><br />
+            <div style="float: right;"  class="col2"> 
+            <p><u><b><h4 style="color:#1b01fa">სწავლის საფასური:</h4></b></u></p>
+           <ul><li>ინდივიდუალური - 120 ლარი</li><li>2 კაციანი ჯგუფი- 70 ლარი</li><li>4 კაციანი ჯგუფი- 50 ლარი</li></ul></div><br /><br />
+            <p><a name="chinuri" id="chinuri"></a></p><br /><br />
+            <h2>5.ჩინური ენის შემსწავლელი კურსი:</h2>
+            <h3>ისწავლეთ ჩინური ენა სწრაფად და ადვილად!</h3>
+            <p class="col2"><img src="~/Images/china.jpg" class="floatLeft" height="200" width="200" />&nbsp;&nbsp;
+               გთავაზობთ ჩინური ენის სპეციალიზირებულ კურსს. შეისწავლეთ ჩინური ენა ოთხჯერ უფრო სწრაფად და მარტივად!  კურსი მოიცავს სპეციალიზირებულ ლექსიკასა და ტერმინოლოგიებს, მსოფლიოს ყველაზე ცნობილ და საუკეთესო პროგრამებს, აპრობირებულ და დამტკიცებულ მეთოდებს!  კურსი გულისხმობს ასევე აუდიო და ვიდეო მასალის გამოყენებას, პრაქტიკულ კურსებსა და სიმულაციურ თამაშებს. მეცადინეობა მიმდინარეობს როგორც ჯგუფურად ასევე ინდივიდუალურად! </p><br /><br /><br />
+             <div style="float: right;"  class="col2"> 
+            <p><u><b><h4 style="color:#1b01fa">სწავლის საფასური:</h4></b></u></p>
+           <ul><li>ინდივიდუალური - 120 ლარი</li><li>2 კაციანი ჯგუფი- 70 ლარი</li><li>4 კაციანი ჯგუფი- 50 ლარი</li></ul></div><br /><br />
+            
+            <p><a name="turquli" id="turquli"></a></p><br /><br />
+            <h2>6.თურქული ენის შემსწავლელი კურსი:</h2>
+            <h3>ისწავლეთ თურქული ენა სწრაფად და ადვილად!</h3>
+            <p class="col2"><img src="~/Images/Turkish.jpg" class="floatLeft" height="200" width="200" />&nbsp;&nbsp;
+               გთავაზობთ თურქული ენის სპეციალიზირებულ კურსს. შეისწავლეთ თურქული ენა ოთხჯერ უფრო სწრაფად და მარტივად!  კურსი მოიცავს სპეციალიზირებულ ლექსიკასა და ტერმინოლოგიებს, მსოფლიოს ყველაზე ცნობილ და საუკეთესო პროგრამებს, აპრობირებულ და დამტკიცებულ მეთოდებს!  კურსი გულისხმობს ასევე აუდიო და ვიდეო მასალის გამოყენებას, პრაქტიკულ კურსებსა და სიმულაციურ თამაშებს. მეცადინეობა მიმდინარეობს როგორც ჯგუფურად ასევე ინდივიდუალურად! </p><br /><br /><br />
+            <div style="float: right;"  class="col2"> 
+            <p><u><b><h4 style="color:#1b01fa">სწავლის საფასური:</h4></b></u></p>
+           <ul><li>ინდივიდუალური - 120 ლარი</li><li>2 კაციანი ჯგუფი- 70 ლარი</li><li>4 კაციანი ჯგუფი- 50 ლარი</li></ul></div><br /><br />
+            <p><a name="espanuri" id="espanuri"></a></p><br /><br />
+            <h2>7.ესპანური ენის შემსწავლელი კურსი:</h2>
+            <h3>ისწავლეთ ესპანური ენა სწრაფად და ადვილად!</h3>
+            <p class="col2"><img src="~/Images/spain.jpg" class="floatLeft" height="200" width="200" />&nbsp;&nbsp;
+                გთავაზობთ ესპანური ენის სპეციალიზირებულ კურსს. შეისწავლეთ ესპანური ენა ოთხჯერ უფრო სწრაფად და მარტივად!  კურსი მოიცავს სპეციალიზირებულ ლექსიკასა და ტერმინოლოგიებს, მსოფლიოს ყველაზე ცნობილ და საუკეთესო პროგრამებს, აპრობირებულ და დამტკიცებულ მეთოდებს!  კურსი გულისხმობს ასევე აუდიო და ვიდეო მასალის გამოყენებას, პრაქტიკულ კურსებსა და სიმულაციურ თამაშებს. მეცადინეობა მიმდინარეობს როგორც ჯგუფურად ასევე ინდივიდუალურად!  </p><br /><br /><br />
+             <div style="float: right;"  class="col2"> 
+            <p><u><b><h4 style="color:#1b01fa">სწავლის საფასური:</h4></b></u></p>
+           <ul><li>ინდივიდუალური - 120 ლარი</li><li>2 კაციანი ჯგუფი- 70 ლარი</li><li>4 კაციანი ჯგუფი- 50 ლარი</li></ul></div><br /><br />
+            <p><a name="berznuli" id="berznuli"></a></p><br /><br />
+            <h2>8.ბერძნული ენის შემსწავლელი კურსი:</h2>
+            <h3>ისწავლეთ ბერძნული ენა სწრაფად და ადვილად!</h3>
+            <p class="col2"><img src="~/Images/greek.jpg" class="floatLeft" height="200" width="200" />&nbsp;&nbsp;
+               გთავაზობთ ბერძნული ენის სპეციალიზირებულ კურსს. შეისწავლეთ ბერძნული ენა ოთხჯერ უფრო სწრაფად და მარტივად!  კურსი მოიცავს სპეციალიზირებულ ლექსიკასა და ტერმინოლოგიებს, მსოფლიოს ყველაზე ცნობილ და საუკეთესო პროგრამებს, აპრობირებულ და დამტკიცებულ მეთოდებს!  კურსი გულისხმობს ასევე აუდიო და ვიდეო მასალის გამოყენებას, პრაქტიკულ კურსებსა და სიმულაციურ თამაშებს. მეცადინეობა მიმდინარეობს როგორც ჯგუფურად ასევე ინდივიდუალურად! </p><br /><br /><br />
+            <div style="float: right;"  class="col2"> 
+            <p><u><b><h4 style="color:#1b01fa">სწავლის საფასური:</h4></b></u></p>
+           <ul><li>ინდივიდუალური - 120 ლარი</li><li>2 კაციანი ჯგუფი- 70 ლარი</li><li>4 კაციანი ჯგუფი- 50 ლარი</li></ul></div><br /><br />
+            
+            <p><a name="italiuri" id="italiuri"></a></p><br /><br />
+            <h2>9.იტალიური ენის შემსწავლელი კურსი:</h2>
+            <h3>ისწავლეთ იტალიური ენა სწრაფად და ადვილად!</h3>
+            <p class="col2"><img src="~/Images/italian.jpg" class="floatLeft" height="200" width="200" />&nbsp;&nbsp;
+               გთავაზობთ იტალიური ენის სპეციალიზირებულ კურსს. შეისწავლეთ იტალიური ენა ოთხჯერ უფრო სწრაფად და მარტივად!  კურსი მოიცავს სპეციალიზირებულ ლექსიკასა და ტერმინოლოგიებს, მსოფლიოს ყველაზე ცნობილ და საუკეთესო პროგრამებს, აპრობირებულ და დამტკიცებულ მეთოდებს!  კურსი გულისხმობს ასევე აუდიო და ვიდეო მასალის გამოყენებას, პრაქტიკულ კურსებსა და სიმულაციურ თამაშებს. მეცადინეობა მიმდინარეობს როგორც ჯგუფურად ასევე ინდივიდუალურად!  </p><br /><br /><br />
+            <div style="float: right;"  class="col2"> 
+            <p><u><b><h4 style="color:#1b01fa">სწავლის საფასური:</h4></b></u></p>
+           <ul><li>ინდივიდუალური - 120 ლარი</li><li>2 კაციანი ჯგუფი- 70 ლარი</li><li>4 კაციანი ჯგუფი- 50 ლარი</li></ul></div><br /><br />
+             <p><a name="iaponuri" id="iaponuri"></a></p><br /><br />
+            <h2>10.იაპონური ენის შემსწავლელი კურსი:</h2>
+            <h3>ისწავლეთ იაპონური ენა სწრაფად და ადვილად!</h3>
+            <p class="col2"><img src="~/Images/japan.jpg" class="floatLeft" height="200" width="200" />&nbsp;&nbsp;
+                საგთავაზობთ იაპონური ენის სპეციალიზირებულ კურსს. შეისწავლეთ იაპონური ენა ოთხჯერ უფრო სწრაფად და მარტივად!  კურსი მოიცავს სპეციალიზირებულ ლექსიკასა და ტერმინოლოგიებს, მსოფლიოს ყველაზე ცნობილ და საუკეთესო პროგრამებს, აპრობირებულ და დამტკიცებულ მეთოდებს!  კურსი გულისხმობს ასევე აუდიო და ვიდეო მასალის გამოყენებას, პრაქტიკულ კურსებსა და სიმულაციურ თამაშებს. მეცადინეობა მიმდინარეობს როგორც ჯგუფურად ასევე ინდივიდუალურად! </p><br /><br /><br />
+              <div style="float: right;"  class="col2"> 
+            <p><u><b><h4 style="color:#1b01fa">სწავლის საფასური:</h4></b></u></p>
+           <ul><li>ინდივიდუალური - 120 ლარი</li><li>2 კაციანი ჯგუფი- 70 ლარი</li><li>4 კაციანი ჯგუფი- 50 ლარი</li></ul></div><br /><br />
+            
+            <p><a name="arabuli" id="arabuli"></a></p><br /><br />
+            <h2>11.არაბული ენის შემსწავლელი კურსი:</h2>
+            <h3>ისწავლეთ არაბული ენა სწრაფად და ადვილად!</h3>
+            <p class="col2"><img src="~/Images/arabic.jpg" class="floatLeft" height="200" width="200" />&nbsp;&nbsp;
+               გთავაზობთ არაბული ენის სპეციალიზირებულ კურსს. შეისწავლეთ არაბული ენა ოთხჯერ უფრო სწრაფად და მარტივად!  კურსი მოიცავს სპეციალიზირებულ ლექსიკასა და ტერმინოლოგიებს, მსოფლიოს ყველაზე ცნობილ და საუკეთესო პროგრამებს, აპრობირებულ და დამტკიცებულ მეთოდებს!  კურსი გულისხმობს ასევე აუდიო და ვიდეო მასალის გამოყენებას, პრაქტიკულ კურსებსა და სიმულაციურ თამაშებს. მეცადინეობა მიმდინარეობს როგორც ჯგუფურად ასევე ინდივიდუალურად! </p><br /><br /><br />
+             <div style="float: right;"  class="col2"> 
+            <p><u><b><h4 style="color:#1b01fa">სწავლის საფასური:</h4></b></u></p>
+           <ul><li>ინდივიდუალური - 120 ლარი</li><li>2 კაციანი ჯგუფი- 70 ლარი</li><li>4 კაციანი ჯგუფი- 50 ლარი</li></ul></div><br /><br />
+           
+            <p><a name="unarebi" id="unarebi"></a></p><br /><br />
+            <h2>1.ზოგადი უანრების  შემსწავლელი კურსები აბიტურიენტთათვის:</h2>
+            <h3>ისწავლეთ იუნარები სწრაფად და ადვილად!</h3>
+            <p class="col2"><img src="~/Images/saatestato da abiturientebi/unarebi.jpg" class="floatLeft" height="200" width="200" />&nbsp;&nbsp;მოემზადეთ ერთიანი ეროვნული გამოცდებისთვის და მიიღეთ საუკეთესო შეფასება! მხოლოდ ჩვენთან! პირველად საქართველოში! აბიტურიენტთა მომზადების პროგრამები, რომლებიც 100% შედეგს იძლევა! გაიარეთ კურსი ჩვენთან და თქვენ შესძლებთ ნებისმიერი დონის გრამატიკული ტესტის დაწერას. თქვენი სიტყვათა მარაგი მოგცემთ შესაძლებლობას დაწეროთ კარგი და გამართული თემა! კურსი ასევე მოსასმენ მასალებს გულისხმობს! თქვენ საუკეთესო შედეგებს იმსახურებთ! გააკეთეთ სწორი არჩევანი, ისწავლეთ ჩვენთან!</p><br /><br /><br />
+            <div style="float: right;"  class="col2"> 
+            <p><u><b><h4 style="color:#1b01fa">სწავლის საფასური:</h4></b></u></p>
+           <ul><li>ინდივიდუალური - 120 ლარი</li><li>2 კაციანი ჯგუფი- 70 ლარი</li><li>4 კაციანი ჯგუფი- 50 ლარი</li></ul></div><br /><br />
+           
+            <p><a name="qartuli_ena" id="qartuli_ena"></a></p><br /><br />
+            <h2>2.ქართული ენის  შემსწავლელი კურსები აბიტურიენტთათვის:</h2>
+            <h3>ისწავლეთ ქართული ენა სწრაფად და ადვილად!</h3>
+             <p class="col2"><img src="~/Images/saatestato da abiturientebi/qartuliEna.jpg" class="floatLeft" height="200" width="200" />&nbsp;&nbsp;მოემზადეთ ერთიანი ეროვნული გამოცდებისთვის და მიიღეთ საუკეთესო შეფასება! მხოლოდ ჩვენთან! პირველად საქართველოში! აბიტურიენტთა მომზადების პროგრამები, რომლებიც 100% შედეგს იძლევა! გაიარეთ კურსი ჩვენთან და თქვენ შესძლებთ ნებისმიერი დონის გრამატიკული ტესტის დაწერას. თქვენი სიტყვათა მარაგი მოგცემთ შესაძლებლობას დაწეროთ კარგი და გამართული თემა! კურსი ასევე მოსასმენ მასალებს გულისხმობს! თქვენ საუკეთესო შედეგებს იმსახურებთ! გააკეთეთ სწორი არჩევანი, ისწავლეთ ჩვენთან!</p><br /><br /><br /><br /><br /><br />
+            <div style="float: right;"  class="col2"> 
+            <p><u><b><h4 style="color:#1b01fa">სწავლის საფასური:</h4></b></u></p>
+           <ul><li>ინდივიდუალური - 120 ლარი</li><li>2 კაციანი ჯგუფი- 70 ლარი</li><li>4 კაციანი ჯგუფი- 50 ლარი</li></ul></div><br /><br />
+           
+            <p><a name="ucxo_ena" id="ucxo_ena"></a></p><br /><br />
+            <h2>3.უცხო ენის  შემსწავლელი კურსები აბიტურიენტთათვის:</h2>
+            <h3>ისწავლეთ უცხო ენა სწრაფად და ადვილად!</h3>
+           <p class="col2"><img src="~/Images/saatestato da abiturientebi/ucxoEna.jpg" class="floatLeft" height="180" width="180" />&nbsp;&nbsp;მოემზადეთ ერთიანი ეროვნული გამოცდებისთვის და მიიღეთ საუკეთესო შეფასება! მხოლოდ ჩვენთან! პირველად საქართველოში! აბიტურიენტთა მომზადების პროგრამები, რომლებიც 100% შედეგს იძლევა! გაიარეთ კურსი ჩვენთან და თქვენ შესძლებთ ნებისმიერი დონის გრამატიკული ტესტის დაწერას. თქვენი სიტყვათა მარაგი მოგცემთ შესაძლებლობას დაწეროთ კარგი და გამართული თემა! კურსი ასევე მოსასმენ მასალებს გულისხმობს! თქვენ საუკეთესო შედეგებს იმსახურებთ! გააკეთეთ სწორი არჩევანი, ისწავლეთ ჩვენთან!</p><br /><br /><br /><br />
+            <div style="float: right;"  class="col2"> 
+            <p><u><b><h4 style="color:#1b01fa">სწავლის საფასური:</h4></b></u></p>
+           <ul><li>ინდივიდუალური - 120 ლარი</li><li>2 კაციანი ჯგუფი- 70 ლარი</li><li>4 კაციანი ჯგუფი- 50 ლარი</li></ul></div><br /><br />
+            
+            <p><a name="geografia" id="geografia"></a></p><br /><br />
+            <h2>4.გეოგრაფიის  შემსწავლელი კურსები აბიტურიენტთათვის:</h2>
+            <h3>ისწავლეთ გეოგრაფია სწრაფად და ადვილად!</h3>
+            <p class="col2"><img src="~/Images/saatestato da abiturientebi/geografia.jpg" class="floatLeft" height="300" width="300" />&nbsp;&nbsp;მოემზადეთ ერთიანი ეროვნული გამოცდებისთვის და მიიღეთ საუკეთესო შეფასება! მხოლოდ ჩვენთან! პირველად საქართველოში! აბიტურიენტთა მომზადების პროგრამები, რომლებიც 100% შედეგს იძლევა! გაიარეთ კურსი ჩვენთან და თქვენ შესძლებთ ნებისმიერი დონის გრამატიკული ტესტის დაწერას. თქვენი სიტყვათა მარაგი მოგცემთ შესაძლებლობას დაწეროთ კარგი და გამართული თემა! კურსი ასევე მოსასმენ მასალებს გულისხმობს! თქვენ საუკეთესო შედეგებს იმსახურებთ! გააკეთეთ სწორი არჩევანი, ისწავლეთ ჩვენთან!</p><br /><br /><br />
+            <div style="float: right;"  class="col2"> 
+            <p><u><b><h4 style="color:#1b01fa">სწავლის საფასური:</h4></b></u></p>
+           <ul><li>ინდივიდუალური - 120 ლარი</li><li>2 კაციანი ჯგუფი- 70 ლარი</li><li>4 კაციანი ჯგუფი- 50 ლარი</li></ul></div><br /><br />
+            
+            <p><a name="fizika" id="fizika"></a></p><br /><br />
+            <h2>5.ფიზიკის  შემსწავლელი კურსები აბიტურიენტთათვის:</h2>
+            <h3>ისწავლეთ ფიზიკა სწრაფად და ადვილად!</h3>
+            <p class="col2"><img src="~/Images/saatestato da abiturientebi/fizika.jpg" class="floatLeft" height="200" width="200" />&nbsp;&nbsp;მოემზადეთ ერთიანი ეროვნული გამოცდებისთვის და მიიღეთ საუკეთესო შეფასება! მხოლოდ ჩვენთან! პირველად საქართველოში! აბიტურიენტთა მომზადების პროგრამები, რომლებიც 100% შედეგს იძლევა! გაიარეთ კურსი ჩვენთან და თქვენ შესძლებთ ნებისმიერი დონის გრამატიკული ტესტის დაწერას. თქვენი სიტყვათა მარაგი მოგცემთ შესაძლებლობას დაწეროთ კარგი და გამართული თემა! კურსი ასევე მოსასმენ მასალებს გულისხმობს! თქვენ საუკეთესო შედეგებს იმსახურებთ! გააკეთეთ სწორი არჩევანი, ისწავლეთ ჩვენთან!</p><br /><br /><br /><br />
+            <div style="float: right;"  class="col2"> 
+            <p><u><b><h4 style="color:#1b01fa">სწავლის საფასური:</h4></b></u></p>
+           <ul><li>ინდივიდუალური - 120 ლარი</li><li>2 კაციანი ჯგუფი- 70 ლარი</li><li>4 კაციანი ჯგუფი- 50 ლარი</li></ul></div><br /><br />
+            
+            <p><a name="qimia" id="qimia"></a></p><br /><br />
+            <h2>6.ქიმიის  შემსწავლელი კურსები აბიტურიენტთათვის:</h2>
+            <h3>ისწავლეთ ქიმია სწრაფად და ადვილად!</h3>
+            <p class="col2"><img src="~/Images/saatestato da abiturientebi/qimia.jpg" class="floatLeft" height="200" width="200" />&nbsp;&nbsp;მოემზადეთ ერთიანი ეროვნული გამოცდებისთვის და მიიღეთ საუკეთესო შეფასება! მხოლოდ ჩვენთან! პირველად საქართველოში! აბიტურიენტთა მომზადების პროგრამები, რომლებიც 100% შედეგს იძლევა! გაიარეთ კურსი ჩვენთან და თქვენ შესძლებთ ნებისმიერი დონის გრამატიკული ტესტის დაწერას. თქვენი სიტყვათა მარაგი მოგცემთ შესაძლებლობას დაწეროთ კარგი და გამართული თემა! კურსი ასევე მოსასმენ მასალებს გულისხმობს! თქვენ საუკეთესო შედეგებს იმსახურებთ! გააკეთეთ სწორი არჩევანი, ისწავლეთ ჩვენთან!</p><br /><br /><br />
+            <div style="float: right;"  class="col2"> 
+            <p><u><b><h4 style="color:#1b01fa">სწავლის საფასური:</h4></b></u></p>
+           <ul><li>ინდივიდუალური - 120 ლარი</li><li>2 კაციანი ჯგუფი- 70 ლარი</li><li>4 კაციანი ჯგუფი- 50 ლარი</li></ul></div><br /><br />
+            
+             
+            <p><a name="istoria" id="istoria"></a></p><br /><br />
+            <h2>7.ისტორიის  შემსწავლელი კურსები აბიტურიენტთათვის:</h2>
+            <h3>ისწავლეთ ისტორია სწრაფად და ადვილად!</h3>
+            <p class="col2"><img src="~/Images/saatestato da abiturientebi/istoria.jpg" class="floatLeft" height="200" width="200" />&nbsp;&nbsp;მოემზადეთ ერთიანი ეროვნული გამოცდებისთვის და მიიღეთ საუკეთესო შეფასება! მხოლოდ ჩვენთან! პირველად საქართველოში! აბიტურიენტთა მომზადების პროგრამები, რომლებიც 100% შედეგს იძლევა! გაიარეთ კურსი ჩვენთან და თქვენ შესძლებთ ნებისმიერი დონის გრამატიკული ტესტის დაწერას. თქვენი სიტყვათა მარაგი მოგცემთ შესაძლებლობას დაწეროთ კარგი და გამართული თემა! კურსი ასევე მოსასმენ მასალებს გულისხმობს! თქვენ საუკეთესო შედეგებს იმსახურებთ! გააკეთეთ სწორი არჩევანი, ისწავლეთ ჩვენთან!</p><br /><br /><br />
+            <div style="float: right;"  class="col2"> 
+            <p><u><b><h4 style="color:#1b01fa">სწავლის საფასური:</h4></b></u></p>
+           <ul><li>ინდივიდუალური - 120 ლარი</li><li>2 კაციანი ჯგუფი- 70 ლარი</li><li>4 კაციანი ჯგუფი- 50 ლარი</li></ul></div><br /><br />
+            
+             <p><a name="literatura" id="literatura"></a></p><br /><br />
+            <h2>8.ლიტერატურის  შემსწავლელი კურსები აბიტურიენტთათვის:</h2>
+            <h3>ისწავლეთ ლიტერატურა სწრაფად და ადვილად!</h3>
+            <p class="col2"><img src="~/Images/saatestato da abiturientebi/literatura.jpg" class="floatLeft" height="200" width="200" />&nbsp;&nbsp;მოემზადეთ ერთიანი ეროვნული გამოცდებისთვის და მიიღეთ საუკეთესო შეფასება! მხოლოდ ჩვენთან! პირველად საქართველოში! აბიტურიენტთა მომზადების პროგრამები, რომლებიც 100% შედეგს იძლევა! გაიარეთ კურსი ჩვენთან და თქვენ შესძლებთ ნებისმიერი დონის გრამატიკული ტესტის დაწერას. თქვენი სიტყვათა მარაგი მოგცემთ შესაძლებლობას დაწეროთ კარგი და გამართული თემა! კურსი ასევე მოსასმენ მასალებს გულისხმობს! თქვენ საუკეთესო შედეგებს იმსახურებთ! გააკეთეთ სწორი არჩევანი, ისწავლეთ ჩვენთან!</p><br /><br /><br />
+            <div style="float: right;"  class="col2"> 
+            <p><u><b><h4 style="color:#1b01fa">სწავლის საფასური:</h4></b></u></p>
+           <ul><li>ინდივიდუალური - 120 ლარი</li><li>2 კაციანი ჯგუფი- 70 ლარი</li><li>4 კაციანი ჯგუფი- 50 ლარი</li></ul></div><br /><br />
+            
+            <p><a name="samoqalaqo_ganatleba" id="samoqalaqo_ganatleba"></a></p><br /><br />
+            <h2>9.სამოქალაქო განათლების  შემსწავლელი კურსები აბიტურიენტთათვის:</h2>
+            <h3>ისწავლეთ სამოქალაქო განათლება სწრაფად და ადვილად!</h3>
+            <p class="col2"><img src="~/Images/saatestato da abiturientebi/samoqalaqo.jpg" class="floatLeft" height="200" width="200" />&nbsp;&nbsp;მოემზადეთ ერთიანი ეროვნული გამოცდებისთვის და მიიღეთ საუკეთესო შეფასება! მხოლოდ ჩვენთან! პირველად საქართველოში! აბიტურიენტთა მომზადების პროგრამები, რომლებიც 100% შედეგს იძლევა! გაიარეთ კურსი ჩვენთან და თქვენ შესძლებთ ნებისმიერი დონის გრამატიკული ტესტის დაწერას. თქვენი სიტყვათა მარაგი მოგცემთ შესაძლებლობას დაწეროთ კარგი და გამართული თემა! კურსი ასევე მოსასმენ მასალებს გულისხმობს! თქვენ საუკეთესო შედეგებს იმსახურებთ! გააკეთეთ სწორი არჩევანი, ისწავლეთ ჩვენთან!</p><br /><br /><br />
+            <div style="float: right;"  class="col2"> 
+            <p><u><b><h4 style="color:#1b01fa">სწავლის საფასური:</h4></b></u></p>
+           <ul><li>ინდივიდუალური - 120 ლარი</li><li>2 კაციანი ჯგუფი- 70 ლარი</li><li>4 კაციანი ჯგუფი- 50 ლარი</li></ul></div><br /><br />
+            
+             <p><a name="xelovneba" id="xelovneba"></a></p><br /><br />
+            <h2>10.ხელოვნების  შემსწავლელი კურსები აბიტურიენტთათვის:</h2>
+            <h3>ისწავლეთ ხელოვნება სწრაფად და ადვილად!</h3>
+            <p class="col2"><img src="~/Images/saatestato da abiturientebi/xelovneba.jpg" class="floatLeft" height="200" width="200" />&nbsp;&nbsp;მოემზადეთ ერთიანი ეროვნული გამოცდებისთვის და მიიღეთ საუკეთესო შეფასება! მხოლოდ ჩვენთან! პირველად საქართველოში! აბიტურიენტთა მომზადების პროგრამები, რომლებიც 100% შედეგს იძლევა! გაიარეთ კურსი ჩვენთან და თქვენ შესძლებთ ნებისმიერი დონის გრამატიკული ტესტის დაწერას. თქვენი სიტყვათა მარაგი მოგცემთ შესაძლებლობას დაწეროთ კარგი და გამართული თემა! კურსი ასევე მოსასმენ მასალებს გულისხმობს! თქვენ საუკეთესო შედეგებს იმსახურებთ! გააკეთეთ სწორი არჩევანი, ისწავლეთ ჩვენთან!</p><br /><br /><br />
+            <div style="float: right;"  class="col2"> 
+            <p><u><b><h4 style="color:#1b01fa">სწავლის საფასური:</h4></b></u></p>
+           <ul><li>ინდივიდუალური - 120 ლარი</li><li>2 კაციანი ჯგუფი- 70 ლარი</li><li>4 კაციანი ჯგუფი- 50 ლარი</li></ul></div><br /><br />
+            
+            <p><a name="saatestato_geografia" id="saatestato_geografia"></a></p><br /><br />
+            <h2>1.საატესტატოდ გეოგრაფიის  შემსწავლელი კურსები:</h2>
+            <h3>ისწავლეთ საატესტატო გეოგრაფია სწრაფად და ადვილად!</h3>
+            <p class="col2"><img src="~/Images/saatestato da abiturientebi/geogreafia2.jpg" class="floatLeft" height="200" width="200" />&nbsp;&nbsp;მოემზადეთ ერთიანი საატესტატო გამოცდებისთვის და მიიღეთ საუკეთესო შეფასება! მხოლოდ ჩვენთან! პირველად საქართველოში! საატესტატოს მომზადების პროგრამები, რომლებიც 100% შედეგს იძლევა! გაიარეთ კურსი ჩვენთან და თქვენ შესძლებთ ნებისმიერი სურთულის ტესტის დაწერას. თქვენი სიტყვათა მარაგი მოგცემთ შესაძლებლობას დაწეროთ კარგი და გამართული თემა!  თქვენ საუკეთესო შედეგებს იმსახურებთ! გააკეთეთ სწორი არჩევანი, ისწავლეთ ჩვენთან! </p><br /><br /><br />
+            <div style="float: right;"  class="col2"> 
+            <p><u><b><h4 style="color:#1b01fa">სწავლის საფასური:</h4></b></u></p>
+           <ul><li>ინდივიდუალური - 120 ლარი</li><li>2 კაციანი ჯგუფი- 70 ლარი</li><li>4 კაციანი ჯგუფი- 50 ლარი</li></ul></div><br /><br />
+            
+            
+            <p><a name="saatestato_fizika" id="saatestato_fizika"></a></p><br /><br />
+            <h2>2.საატესტატოდ ფიზიკის  შემსწავლელი კურსები:</h2>
+            <h3>ისწავლეთ საატესტატო ფიზიკა სწრაფად და ადვილად!</h3>
+            <p class="col2"><img src="~/Images/saatestato da abiturientebi/fizika2.jpg" class="floatLeft" height="200" width="200" />&nbsp;&nbsp;მოემზადეთ ერთიანი საატესტატო გამოცდებისთვის და მიიღეთ საუკეთესო შეფასება! მხოლოდ ჩვენთან! პირველად საქართველოში! საატესტატოს მომზადების პროგრამები, რომლებიც 100% შედეგს იძლევა! გაიარეთ კურსი ჩვენთან და თქვენ შესძლებთ ნებისმიერი სურთულის ტესტის დაწერას. თქვენი სიტყვათა მარაგი მოგცემთ შესაძლებლობას დაწეროთ კარგი და გამართული თემა!  თქვენ საუკეთესო შედეგებს იმსახურებთ! გააკეთეთ სწორი არჩევანი, ისწავლეთ ჩვენთან! </p><br /><br /><br />
+            <div style="float: right;"  class="col2"> 
+            <p><u><b><h4 style="color:#1b01fa">სწავლის საფასური:</h4></b></u></p>
+           <ul><li>ინდივიდუალური - 120 ლარი</li><li>2 კაციანი ჯგუფი- 70 ლარი</li><li>4 კაციანი ჯგუფი- 50 ლარი</li></ul></div><br /><br />
+            
+            
+            <p><a name="saatestato_qimia" id="saatestato_qimia"></a></p><br /><br />
+            <h2>3.საატესტატოდ ქიმიის  შემსწავლელი კურსები:</h2>
+            <h3>ისწავლეთ საატესტატო ქიმია სწრაფად და ადვილად!</h3>
+            <p class="col2"><img src="~/Images/saatestato da abiturientebi/qimia2.jpg" class="floatLeft" height="200" width="200" />&nbsp;&nbsp;მოემზადეთ ერთიანი საატესტატო გამოცდებისთვის და მიიღეთ საუკეთესო შეფასება! მხოლოდ ჩვენთან! პირველად საქართველოში! საატესტატოს მომზადების პროგრამები, რომლებიც 100% შედეგს იძლევა! გაიარეთ კურსი ჩვენთან და თქვენ შესძლებთ ნებისმიერი სურთულის ტესტის დაწერას. თქვენი სიტყვათა მარაგი მოგცემთ შესაძლებლობას დაწეროთ კარგი და გამართული თემა!  თქვენ საუკეთესო შედეგებს იმსახურებთ! გააკეთეთ სწორი არჩევანი, ისწავლეთ ჩვენთან! </p><br /><br /><br />
+            <div style="float: right;"  class="col2"> 
+            <p><u><b><h4 style="color:#1b01fa">სწავლის საფასური:</h4></b></u></p>
+           <ul><li>ინდივიდუალური - 120 ლარი</li><li>2 კაციანი ჯგუფი- 70 ლარი</li><li>4 კაციანი ჯგუფი- 50 ლარი</li></ul></div><br /><br />
+            
+
+            <p><a name="saatestato_biologia" id="saatestato_biologia"></a></p><br /><br />
+            <h2>4.საატესტატოდ ბიოლოგიის  შემსწავლელი კურსები :</h2>
+            <h3>ისწავლეთ საატესტატო ბიოლოგია სწრაფად და ადვილად!</h3>
+             <p class="col2"><img src="~/Images/saatestato da abiturientebi/biologia.jpg" class="floatLeft" height="200" width="200" />&nbsp;&nbsp;მოემზადეთ ერთიანი საატესტატო გამოცდებისთვის და მიიღეთ საუკეთესო შეფასება! მხოლოდ ჩვენთან! პირველად საქართველოში! საატესტატოს მომზადების პროგრამები, რომლებიც 100% შედეგს იძლევა! გაიარეთ კურსი ჩვენთან და თქვენ შესძლებთ ნებისმიერი სურთულის ტესტის დაწერას. თქვენი სიტყვათა მარაგი მოგცემთ შესაძლებლობას დაწეროთ კარგი და გამართული თემა!  თქვენ საუკეთესო შედეგებს იმსახურებთ! გააკეთეთ სწორი არჩევანი, ისწავლეთ ჩვენთან! </p><br /><br /><br />
+            <div style="float: right;"  class="col2"> 
+            <p><u><b><h4 style="color:#1b01fa">სწავლის საფასური:</h4></b></u></p>
+           <ul><li>ინდივიდუალური - 120 ლარი</li><li>2 კაციანი ჯგუფი- 70 ლარი</li><li>4 კაციანი ჯგუფი- 50 ლარი</li></ul></div><br /><br />
+            
+            <p><a name="saatestato_matematika" id="saatestato_matematika"></a></p><br /><br />
+            <h2>5.საატესტატოდ მათემატიკის  შემსწავლელი კურსები :</h2>
+            <h3>ისწავლეთ საატესტატო მათემატიკა სწრაფად და ადვილად!</h3>
+            <p class="col2"><img src="~/Images/saatestato da abiturientebi/matematika.jpg" class="floatLeft" height="200" width="200" />&nbsp;&nbsp;მოემზადეთ ერთიანი საატესტატო გამოცდებისთვის და მიიღეთ საუკეთესო შეფასება! მხოლოდ ჩვენთან! პირველად საქართველოში! საატესტატოს მომზადების პროგრამები, რომლებიც 100% შედეგს იძლევა! გაიარეთ კურსი ჩვენთან და თქვენ შესძლებთ ნებისმიერი სურთულის ტესტის დაწერას. თქვენი სიტყვათა მარაგი მოგცემთ შესაძლებლობას დაწეროთ კარგი და გამართული თემა!  თქვენ საუკეთესო შედეგებს იმსახურებთ! გააკეთეთ სწორი არჩევანი, ისწავლეთ ჩვენთან! </p><br /><br /><br />
+            <div style="float: right;"  class="col2"> 
+            <p><u><b><h4 style="color:#1b01fa">სწავლის საფასური:</h4></b></u></p>
+           <ul><li>ინდივიდუალური - 120 ლარი</li><li>2 კაციანი ჯგუფი- 70 ლარი</li><li>4 კაციანი ჯგუფი- 50 ლარი</li></ul></div><br /><br />
+            
+             <p><a name="saatestato_ucxo_ena" id="saatestato_ucxo_ena"></a></p><br /><br />
+            <h2>6.საატესტატოდ უცხო ენის  შემსწავლელი კურსები :</h2>
+            <h3>ისწავლეთ საატესტატო უცხო ენა სწრაფად და ადვილად!</h3>
+             <p class="col2"><img src="~/Images/saatestato da abiturientebi/ucxoEna2.jpg" class="floatLeft" height="250" width="250" />&nbsp;&nbsp;მოემზადეთ ერთიანი საატესტატო გამოცდებისთვის და მიიღეთ საუკეთესო შეფასება! მხოლოდ ჩვენთან! პირველად საქართველოში! საატესტატოს მომზადების პროგრამები, რომლებიც 100% შედეგს იძლევა! გაიარეთ კურსი ჩვენთან და თქვენ შესძლებთ ნებისმიერი სურთულის ტესტის დაწერას. თქვენი სიტყვათა მარაგი მოგცემთ შესაძლებლობას დაწეროთ კარგი და გამართული თემა!  თქვენ საუკეთესო შედეგებს იმსახურებთ! გააკეთეთ სწორი არჩევანი, ისწავლეთ ჩვენთან! </p><br /><br /><br /><br />
+            <div style="float: right;"  class="col2"> 
+            <p><u><b><h4 style="color:#1b01fa">სწავლის საფასური:</h4></b></u></p>
+           <ul><li>ინდივიდუალური - 120 ლარი</li><li>2 კაციანი ჯგუფი- 70 ლარი</li><li>4 კაციანი ჯგუფი- 50 ლარი</li></ul></div><br /><br />
+            
+             <p><a name="saatestato_istoria" id="saatestato_istoria"></a></p><br /><br />
+            <h2>7.საატესტატოდ ისტორიის  შემსწავლელი კურსები :</h2>
+            <h3>ისწავლეთ საატესტატო ისტორია სწრაფად და ადვილად!</h3>
+             <p class="col2"><img src="~/Images/saatestato da abiturientebi/istoria2.jpg" class="floatLeft" height="200" width="200" />&nbsp;&nbsp;მოემზადეთ ერთიანი საატესტატო გამოცდებისთვის და მიიღეთ საუკეთესო შეფასება! მხოლოდ ჩვენთან! პირველად საქართველოში! საატესტატოს მომზადების პროგრამები, რომლებიც 100% შედეგს იძლევა! გაიარეთ კურსი ჩვენთან და თქვენ შესძლებთ ნებისმიერი სურთულის ტესტის დაწერას. თქვენი სიტყვათა მარაგი მოგცემთ შესაძლებლობას დაწეროთ კარგი და გამართული თემა!  თქვენ საუკეთესო შედეგებს იმსახურებთ! გააკეთეთ სწორი არჩევანი, ისწავლეთ ჩვენთან! </p><br /><br /><br />
+            <div style="float: right;"  class="col2"> 
+            <p><u><b><h4 style="color:#1b01fa">სწავლის საფასური:</h4></b></u></p>
+           <ul><li>ინდივიდუალური - 120 ლარი</li><li>2 კაციანი ჯგუფი- 70 ლარი</li><li>4 კაციანი ჯგუფი- 50 ლარი</li></ul></div><br /><br />
+            
+             <p><a name="saatestato_qartuli_ena" id="saatestato_qartuli_ena"></a></p><br /><br />
+            <h2>8.საატესტატოდ ქართული ენის და ლიტერატურის  შემსწავლელი კურსები  :</h2>
+            <h3>ისწავლეთ საატესტატო ქართული ენა და ლიტერატურა სწრაფად და ადვილად!</h3>
+             <p class="col2"><img src="~/Images/saatestato da abiturientebi/qartuli2.jpg" class="floatLeft" height="200" width="200" />&nbsp;&nbsp;მოემზადეთ ერთიანი საატესტატო გამოცდებისთვის და მიიღეთ საუკეთესო შეფასება! მხოლოდ ჩვენთან! პირველად საქართველოში! საატესტატოს მომზადების პროგრამები, რომლებიც 100% შედეგს იძლევა! გაიარეთ კურსი ჩვენთან და თქვენ შესძლებთ ნებისმიერი სურთულის ტესტის დაწერას. თქვენი სიტყვათა მარაგი მოგცემთ შესაძლებლობას დაწეროთ კარგი და გამართული თემა!  თქვენ საუკეთესო შედეგებს იმსახურებთ! გააკეთეთ სწორი არჩევანი, ისწავლეთ ჩვენთან! </p><br /><br /><br /><br /><br /><br />
+            <div style="float: right;"  class="col2"> 
+            <p><u><b><h4 style="color:#1b01fa">სწავლის საფასური:</h4></b></u></p>
+           <ul><li>ინდივიდუალური - 120 ლარი</li><li>2 კაციანი ჯგუფი- 70 ლარი</li><li>4 კაციანი ჯგუფი- 50 ლარი</li></ul></div><br /><br />
+            
+             
+             <p><a name="sertifikati_geografia" id="sertifikati_geografia"></a></p><br /><br />
+            <h2>1.სასერთიფიკაციო გეოგრაფიის  შემსწავლელი კურსები:</h2>
+            <h3>ისწავლეთ საატესტატო გეოგრაფია სწრაფად და ადვილად!</h3>
+            <p class="col2">სასწავლო ცენტრმა ILC ინგლისური ენის მასწავლებლად მოიწვია ამერიკელი პედაგოგი. სწავლების მიმართულება: საერთაშორისო გამოცდებისთვის (FCE ,TOEFL, IELTS) მომზადება; აკადემიური ინგლისური ენა და ლიტერატურა; ინგლისური ენის სპეციალისტების კვალიფიკაციის ამაღლება; საერთასშორისო იურიდიული და ბიზნეს ინგლისური; საბანკო საქმე და ფინანსები; გაყიდვები და მარკეტინგი; საერთაშორისო სამართალი; ადმინისტრაციული სამართალი; იურიდიული/ტექნიკური წერა; ჯოშუა ჯოზეფ სტოველს აქვს პედაგოგიური განათლება (ინგლისური ენა და კომუნიკაციები, დამთავრებული აქვს პენსილვანიის კალიფორნიის ინსტიტუტი, M.S. სამართალი, საჯარო პოლიტიკა (ადმინისტრაციული სამართალი). როგორც ინგლისური ენის მაღალკვალიფიციურ პედაგოგს გააჩნია მრავალწლიანი გამოცდილება, ინგლისური ენის სწავლების სფეროში. ის მიწვეული იყო სხვადასხვა ქვეყნებში ,როგორც ინგლისური ენის სპეციალისტი. თანამშრომლობდა ოქსფორდის უნივერსიტეტთან. საქართველოში ის თანამშრომლობს წამყვან უმაღლეს სასწავლებლებთან. </p>
+            <p>ერთი თვის სასწავლო გადასახადი:</p>
+            <p align="right"><font color="#ff0000">კვირაში 2-ჯერ (8 გაკვ. თვეში) ჯგუფში 80 ლარი, წყვილში 100 ლარი.</font></p>
+            
+             <p><a name="sertifikati_fizika" id="sertifikati_fizika"></a></p><br /><br />
+            <h2>2.სასერთიფიკაციო ფიზიკის შემსწავლელი კურსები:</h2>
+            <h3>ისწავლეთ საატესტატო ფიზიკა სწრაფად და ადვილად!</h3>
+            <p class="col2">სასწავლო ცენტრმა ILC ინგლისური ენის მასწავლებლად მოიწვია ამერიკელი პედაგოგი. სწავლების მიმართულება: საერთაშორისო გამოცდებისთვის (FCE ,TOEFL, IELTS) მომზადება; აკადემიური ინგლისური ენა და ლიტერატურა; ინგლისური ენის სპეციალისტების კვალიფიკაციის ამაღლება; საერთასშორისო იურიდიული და ბიზნეს ინგლისური; საბანკო საქმე და ფინანსები; გაყიდვები და მარკეტინგი; საერთაშორისო სამართალი; ადმინისტრაციული სამართალი; იურიდიული/ტექნიკური წერა; ჯოშუა ჯოზეფ სტოველს აქვს პედაგოგიური განათლება (ინგლისური ენა და კომუნიკაციები, დამთავრებული აქვს პენსილვანიის კალიფორნიის ინსტიტუტი, M.S. სამართალი, საჯარო პოლიტიკა (ადმინისტრაციული სამართალი). როგორც ინგლისური ენის მაღალკვალიფიციურ პედაგოგს გააჩნია მრავალწლიანი გამოცდილება, ინგლისური ენის სწავლების სფეროში. ის მიწვეული იყო სხვადასხვა ქვეყნებში ,როგორც ინგლისური ენის სპეციალისტი. თანამშრომლობდა ოქსფორდის უნივერსიტეტთან. საქართველოში ის თანამშრომლობს წამყვან უმაღლეს სასწავლებლებთან. </p>
+            <p>ერთი თვის სასწავლო გადასახადი:</p>
+            <p align="right"><font color="#ff0000">კვირაში 2-ჯერ (8 გაკვ. თვეში) ჯგუფში 80 ლარი, წყვილში 100 ლარი.</font></p>
+            
+            <p><a name="sertifikati_qimia" id="sertifikati_qimia"></a></p><br /><br />
+            <h2>3.სასერთიფიკაციო ქიმიის შემსწავლელი კურსები:</h2>
+            <h3>ისწავლეთ საატესტატო ქიმია სწრაფად და ადვილად!</h3>
+            <p class="col2">სასწავლო ცენტრმა ILC ინგლისური ენის მასწავლებლად მოიწვია ამერიკელი პედაგოგი. სწავლების მიმართულება: საერთაშორისო გამოცდებისთვის (FCE ,TOEFL, IELTS) მომზადება; აკადემიური ინგლისური ენა და ლიტერატურა; ინგლისური ენის სპეციალისტების კვალიფიკაციის ამაღლება; საერთასშორისო იურიდიული და ბიზნეს ინგლისური; საბანკო საქმე და ფინანსები; გაყიდვები და მარკეტინგი; საერთაშორისო სამართალი; ადმინისტრაციული სამართალი; იურიდიული/ტექნიკური წერა; ჯოშუა ჯოზეფ სტოველს აქვს პედაგოგიური განათლება (ინგლისური ენა და კომუნიკაციები, დამთავრებული აქვს პენსილვანიის კალიფორნიის ინსტიტუტი, M.S. სამართალი, საჯარო პოლიტიკა (ადმინისტრაციული სამართალი). როგორც ინგლისური ენის მაღალკვალიფიციურ პედაგოგს გააჩნია მრავალწლიანი გამოცდილება, ინგლისური ენის სწავლების სფეროში. ის მიწვეული იყო სხვადასხვა ქვეყნებში ,როგორც ინგლისური ენის სპეციალისტი. თანამშრომლობდა ოქსფორდის უნივერსიტეტთან. საქართველოში ის თანამშრომლობს წამყვან უმაღლეს სასწავლებლებთან. </p>
+            <p>ერთი თვის სასწავლო გადასახადი:</p>
+            <p align="right"><font color="#ff0000">კვირაში 2-ჯერ (8 გაკვ. თვეში) ჯგუფში 80 ლარი, წყვილში 100 ლარი.</font></p>
+            
+            <p><a name="sertifikati_biologia" id="sertifikati_biologia"></a></p><br /><br />
+            <h2>4.სასერთიფიკაციო ბიოლოგიის შემსწავლელი კურსები:</h2>
+            <h3>ისწავლეთ საატესტატო ბიოლოგია სწრაფად და ადვილად!</h3>
+            <p class="col2">სასწავლო ცენტრმა ILC ინგლისური ენის მასწავლებლად მოიწვია ამერიკელი პედაგოგი. სწავლების მიმართულება: საერთაშორისო გამოცდებისთვის (FCE ,TOEFL, IELTS) მომზადება; აკადემიური ინგლისური ენა და ლიტერატურა; ინგლისური ენის სპეციალისტების კვალიფიკაციის ამაღლება; საერთასშორისო იურიდიული და ბიზნეს ინგლისური; საბანკო საქმე და ფინანსები; გაყიდვები და მარკეტინგი; საერთაშორისო სამართალი; ადმინისტრაციული სამართალი; იურიდიული/ტექნიკური წერა; ჯოშუა ჯოზეფ სტოველს აქვს პედაგოგიური განათლება (ინგლისური ენა და კომუნიკაციები, დამთავრებული აქვს პენსილვანიის კალიფორნიის ინსტიტუტი, M.S. სამართალი, საჯარო პოლიტიკა (ადმინისტრაციული სამართალი). როგორც ინგლისური ენის მაღალკვალიფიციურ პედაგოგს გააჩნია მრავალწლიანი გამოცდილება, ინგლისური ენის სწავლების სფეროში. ის მიწვეული იყო სხვადასხვა ქვეყნებში ,როგორც ინგლისური ენის სპეციალისტი. თანამშრომლობდა ოქსფორდის უნივერსიტეტთან. საქართველოში ის თანამშრომლობს წამყვან უმაღლეს სასწავლებლებთან. </p>
+            <p>ერთი თვის სასწავლო გადასახადი:</p>
+            <p align="right"><font color="#ff0000">კვირაში 2-ჯერ (8 გაკვ. თვეში) ჯგუფში 80 ლარი, წყვილში 100 ლარი.</font></p>
+            
+            <p><a name="bugalteria" id="bugalteria"></a></p><br /><br />
+            <h2>1.ბუღალტერიის შემსწავლელი კურსები:</h2>
+            <h3>ისწავლეთ ბუღალტერია სწრაფად და ადვილად!</h3>
+            <p class="col2"><img src="~/Images/bugal.jpg" class="floatLeft" height="350" width="350" />&nbsp;&nbsp; ბუღალტრული აღრიცხვა საერთაშორისო ბასს სტანდარტებით (ფინანსური აღრიცხვა, თეორია, პრაქტიკა)</p><br /><br /><br /><br /><br /><br /><br /><br />
+            <div style="float: right;"  class="col2"> 
+            <p><u><b><h4 style="color:#1b01fa">სრული კურსის ღირებულება:</h4></b></u></p>
+           <ul><li>ინდივიდუალური - 300 ლარი</li><li>2 კაციანი ჯგუფი- 200 ლარი</li></ul>
+           <p><u><b><h4 style="color:#1b01fa">კომპიუტერული ბუღალტერია:</h4></b></u></p>
+            <ul><li>საბუღალტრო პროგრამა ORIS 12 საათიანი კურსი - 100 ლარი</li><li>9 საათიანი კურსი - 80 ლარი</li></ul>
+            </div><br /><br /><br /><br /><br />
+            <a name="Saofise_programebi" id="Saofise_programebi"></a></p><br /><br />
+            <h2>2.საოფისე პროგრამების შემსწავლელი კურსები:</h2>
+            <h3>ისწავლეთ საოფისე პროგრამები სწრაფად და ადვილად!</h3>
+             <p class="col2"><img src="~/Images/off.jpg" class="floatLeft" height="250" width="250" style="margin-right: 25px;"  />&nbsp;&nbsp;მრავალპროფილიანი ლინგვისტური კომპანია “NM” გთავაზობთ საოფისე პროგრამების შემსწავლელი კურსს.  ყურადღება! ჩვენ არ ვითვლით გაკვეთილებს. კურსის დასრულებისთანავე გაიცემა ორენოვანი სერტიფიკატი. 
+                 <p ><h4><b><u style="color:#1b01fa">კურსი მოიცავს:</u></b></h4></p>
+                <ul><li>MS Word </li><li>MS Excel </li><li>MS PowerPoint </li><li>ელ. ფოსტა, ინტერნეტ სივრცე, სოციალური ქსელები </li></ul>
+                 <p ><h4><b><u style="color:#1b01fa">დამატებითი გაკვეთილები: </u></b></h4></p>
+                  <ul><li>პრინტერთან/ სკანერთან მუშაობა  </li><li>ელექტრონული ფოსტა (MS Outlook, Yahoo, Gmail ) </li><li style="margin-left:275px">სოციალური ქსელები</li></ul>
+
+</p><br /><br /><br /><br />
+          <div style="float: right;"  class="col2"> 
+            <p><u><b><h4 style="color:#1b01fa">სწავლის საფასური:</h4></b></u></p>
+           <ul><li>ინდივიდუალური - 120 ლარი</li><li>2 კაციანი ჯგუფი- 70 ლარი</li><li>4 კაციანი ჯგუფი- 50 ლარი</li></ul></div><br /><br />
+            
+            <a name="IT_injineria" id="IT_injineria"></a></p><br /><br />
+            <h2>3.IT ინჟინერიის შემსწავლელი კურსები:</h2>
+            <h3>ისწავლეთ IT ინჟინერია სწრაფად და ადვილად!</h3>
+            <p class="col2"><img src="~/Images/IT.jpg" class="floatLeft" height="350" width="350" style="margin-right: 25px;"  />&nbsp;&nbsp;ეს კურსი გათვლილია მათთვის, ვისაც სურს სახლის პირობებში დამოუკიდებლად მოახდინოს საკუთარ კომპიუტერზე ოპერაციული სისტემა "ვინდოუსის" დამოუკიდებლად განახლება, დრაივერების და პროგრამების დაყენება, ქსელებთნ მუშაობა.
+                                     მეცადინეობას ატარებს კვალიფიცირებული პედაგოგი.
+                                     კურსის დასრულების შემდეგ გაიცემა შესაბამისი კურსის გავლის დამადასტურებელი სერთიფიკატი.
+                <p>კურსში შეისწავლება : </p>
+                <ul><li>კომპიუტერის ტიპები და აგებულება</li><li>პროგრამული უზრუნველყოფა </li><li>ადმინისტრირება</li><li>ქსელის მოწყობა და ადმინისტრირება</li><li>ანტივირუსებთან მუშაობა.</li></ul>
+</p><br /><br /><br /><br />
+            <div style="float: right;"  class="col2"> 
+            <p><u><b><h4 style="color:#1b01fa">სრული კურსის ღირებულება:</h4></b></u></p>
+           <ul><li>ინდივიდუალური - 300 ლარი</li><li>2 კაციანი ჯგუფი- 200 ლარი</li></ul>
+                </div><br /><br />
+            
+            <a name="veb_programireba" id="veb_programireba"></a></p><br /><br />
+            <h2>4.ვებ დიზაინის შემსწავლელი კურსები:</h2>
+            <h3>ისწავლეთ ვებ დიზაინი სწრაფად და ადვილად!</h3>
+            <p class="col2">სასწავლო ცენტრმა ILC ინგლისური ენის მასწავლებლად მოიწვია ამერიკელი პედაგოგი. სწავლების მიმართულება: საერთაშორისო გამოცდებისთვის (FCE ,TOEFL, IELTS) მომზადება; აკადემიური ინგლისური ენა და ლიტერატურა; ინგლისური ენის სპეციალისტების კვალიფიკაციის ამაღლება; საერთასშორისო იურიდიული და ბიზნეს ინგლისური; საბანკო საქმე და ფინანსები; გაყიდვები და მარკეტინგი; საერთაშორისო სამართალი; ადმინისტრაციული სამართალი; იურიდიული/ტექნიკური წერა; ჯოშუა ჯოზეფ სტოველს აქვს პედაგოგიური განათლება (ინგლისური ენა და კომუნიკაციები, დამთავრებული აქვს პენსილვანიის კალიფორნიის ინსტიტუტი, M.S. სამართალი, საჯარო პოლიტიკა (ადმინისტრაციული სამართალი). როგორც ინგლისური ენის მაღალკვალიფიციურ პედაგოგს გააჩნია მრავალწლიანი გამოცდილება, ინგლისური ენის სწავლების სფეროში. ის მიწვეული იყო სხვადასხვა ქვეყნებში ,როგორც ინგლისური ენის სპეციალისტი. თანამშრომლობდა ოქსფორდის უნივერსიტეტთან. საქართველოში ის თანამშრომლობს წამყვან უმაღლეს სასწავლებლებთან. </p>
+            <p>ერთი თვის სასწავლო გადასახადი:</p>
+            <p align="right"><font color="#ff0000">კვირაში 2-ჯერ (8 გაკვ. თვეში) ჯგუფში 80 ლარი, წყვილში 100 ლარი.</font></p>
+            
+            <a name="grafikuli_dizaini" id="grafikuli_dizaini"></a></p><br /><br />
+            <h2>5.გრაფიკული დიზაინის შემსწავლელი კურსები:</h2>
+            <h3>ისწავლეთ გრაფიკული დიზაინი სწრაფად და ადვილად!</h3>
+           <p class="col2">&nbsp;&nbsp;კომპიუტერთან მუშაობა ინდივიდუალურია. სწავლა წარმოებს გაძლიერებული პრაქტიკით.
+მეცადინეობას ატარებს კვალიფიცირებული პედაგოგი. კურსის დასრულების შემდეგ გაიცემა შესაბამისი კურსის გავლის დამადასტურებელი სერთიფიკატი.
+სურვილის შემთხვევაში მოსწავლეს დისკზე ჩაუწერენ ყველა შესწავლილ პროგრამას
+<img src="~/Images/graff.jpg" class="floatLeft" height="350" width="350" style="margin-right: 25px;"  />
+                <p><h4> <b> <u style="color:#1b01fa">კურსში შეისწავლება :</u> </b></h4></p>
+                <ul><li>Photoshop 12 სთ - 130 ლარი</li><li> CorelDraw 12 სთ - 130 ლარი </li><li> Adobe InDesign 12 სთ -160 ლარი</li><li> Adobe Illustrator 10 სთ - 130 ლარი</li><li>Adobe Illustrator 18 სთ - 200 ლარი</li><li>Archicad 28 სთ - 340 ლარი</li><li> Autocad 30 სთ - 350 ლარი</li><li> 3D Max საფუძვლიანი კურსი</li><li style="margin-left:375px"> მოდელირება 16 სთ- 200 ლარი</li><li style="margin-left:375px">ვიზუალიზაცია,ტექსტუირება, განათება, რენდერი: 16 სთ- 200 ლარი</li><li style="margin-left:375px">ანიმაცია 16 სთ- 200 ლარი</li><li style="margin-left:375px">ვიზუალიზაცია Vray პროგრამით: 10 სთ - 150 ლარი</li></ul>
+               <p ><h4><b style="margin-left:375px"><u style="color:#1b01fa">ვიდეო და აუდიო მონტაჟი :</u></b></h4></p>
+               <ul><li style="margin-left:375px">Adobe Premier pro 12 სთ - 170 ლარი </li><li style="margin-left:375px">Adobe After effect 12 სთ - 200 ლარი</li></ul>
+</p><br /><br /><br /><br />
+            
+        </section>        
+    </div>
+
+    <footer id="footer">
+        <div class="container">
+            <p><a name="contact" id="contact"></a></p><br /><br />
+            (+995)&nbsp557 70-12-02<br />
+            (+995)&nbsp574 17-68-05<br /><br />
+            <div class="row">
+                <div class="col-sm-12">
+                    <ul class="social-links">
+                        <li class="fb"><a href="index.html#" class="wow fadeInUp"><i class="fa fa-facebook"></i></a></li>
+                        <li class="tw"><a href="index.html#" class="wow fadeInUp" data-wow-delay=".1s"><i class="fa fa-twitter"></i></a></li>
+                        <li class="gp"><a href="index.html#" class="wow fadeInUp" data-wow-delay=".2s"><i class="fa fa-google-plus"></i></a></li>
+                    </ul>
+                    <center><img class="footer-banner" /></center><br />
+                    <p class="copyright">
+                        NM © 2015 - @DateTime.Now.Year
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="scroll-up">
+        <a href="#home"><i class="fa fa-angle-up"></i></a>
+    </div>
+    <script src="~/assets/js/jquery-1.11.1.min.js"></script>
+    <script src="~/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/assets/js/jquery.parallax-1.1.3.js"></script>
+    <script src="~/assets/js/imagesloaded.pkgd.js"></script>
+    <script src="~/assets/js/jquery.sticky.js"></script>
+    <script src="~/assets/js/smoothscroll.js"></script>
+    <script src="~/assets/js/wow.min.js"></script>
+    <script src="~/assets/js/jquery.easypiechart.js"></script>
+    <script src="~/assets/js/waypoints.min.js"></script>
+    <script src="~/assets/js/jquery.cbpQTRotator.js"></script>
+    <script src="~/assets/js/custom.js"></script>
+    <script src="~/assets/js/typed.js"></script>
+</body>
+</html>
